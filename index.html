@@ -530,7 +530,7 @@
 
     
 
-    <!-- Quantitative Comparison -->
+    <!-- Quantitative Comparison 
     <section class="section hero is-light">
         <div class="container is-max-desktop">
             <div class="hero-body">
@@ -594,7 +594,79 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div>-->
+        <section class="section hero">
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                    <h2 class="title is-3 has-text-centered">Quantitative Comparison</h2>
+        
+                    <div class="table-container">
+                        <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
+                            <thead>
+                                <tr>
+                                    <th>Variant</th>
+                                    <th>mPSNR (dB) ↑</th>
+                                    <th>mSSIM ↑</th>
+                                    <th>mLPIPS ↓</th>
+                                    <th>CLIP-T ↑</th>
+                                    <th>CLIP-I ↑</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>w/ VLM</b></td>
+                                    <td>21.07</td>
+                                    <td>0.7387</td>
+                                    <td>0.1222</td>
+                                    <td>0.3548</td>
+                                    <td>0.9472</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>Random</b></td>
+                                    <td>17.37</td>
+                                    <td>0.6997</td>
+                                    <td>0.1659</td>
+                                    <td>0.3394</td>
+                                    <td>0.9276</td>
+                                </tr>
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-3.70</td>
+                                    <td>-0.0390</td>
+                                    <td>+0.0437</td>
+                                    <td>-0.0154</td>
+                                    <td>-0.0196</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>Empty</b></td>
+                                    <td>16.98</td>
+                                    <td>0.5415</td>
+                                    <td>0.3216</td>
+                                    <td>0.3337</td>
+                                    <td>0.9241</td>
+                                </tr>
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-4.09</td>
+                                    <td>-0.1972</td>
+                                    <td>+0.1994</td>
+                                    <td>-0.0211</td>
+                                    <td>-0.0231</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <p class="subtitle has-text-justified" style="margin-top: 10px;">
+                        Our VLM-driven trajectory module consistently improves spatiotemporal 
+                        fidelity and perceptual alignment compared to Random and Empty baselines.
+                    </p>
+                </div>
+            </div>
+        </section>
+
 
         <div class="container is-max-desktop">
             <div class="hero-body">
