@@ -667,8 +667,144 @@
             </div>
         </section>
 
+        <section class="section hero">
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                    <h2 class="title is-3 has-text-centered">Ablation Study on VLM Trajectory Design</h2>
+        
+                    <div class="table-container">
+                        <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
+                            <thead>
+                                <tr>
+                                    <th>Variant</th>
+                                    <th>IQ ↑</th>
+                                    <th>TF ↑</th>
+                                    <th>AQ ↑</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>w/ VLM</b></td>
+                                    <td>71.22</td>
+                                    <td>0.9897</td>
+                                    <td>0.7307</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>Random</b></td>
+                                    <td>67.47</td>
+                                    <td>0.9776</td>
+                                    <td>0.6591</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-3.75</td>
+                                    <td>-0.0121</td>
+                                    <td>-0.0716</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>Empty</b></td>
+                                    <td>61.57</td>
+                                    <td>0.9523</td>
+                                    <td>0.6251</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-9.65</td>
+                                    <td>-0.0374</td>
+                                    <td>-0.1056</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <p class="subtitle has-text-justified" style="margin-top: 10px;">
+                        Incorporating VLM-based trajectory reasoning substantially improves image quality (IQ), 
+                        temporal fidelity (TF), and appearance consistency (AQ), outperforming random and empty 
+                        baselines by a significant margin.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <div class="container is-max-desktop">
+
+    
+        <section class="section hero">
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                    <h2 class="title is-3 has-text-centered">Ablation Study on Dynamic vs. Static Prior</h2>
+        
+                    <div class="table-container">
+                        <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
+                            <thead>
+                                <tr>
+                                    <th>Variant</th>
+                                    <th>mPSNR (dB) ↑</th>
+                                    <th>mSSIM ↑</th>
+                                    <th>mLPIPS ↓</th>
+                                </tr>
+                            </thead>
+        
+                            <tbody>
+                                <!-- Dynamic Prior -->
+                                <tr>
+                                    <td><b>w/ Dynamic Prior</b></td>
+                                    <td>19.78</td>
+                                    <td>0.6686</td>
+                                    <td>0.1220</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>w/o Dynamic Prior</b></td>
+                                    <td>18.37</td>
+                                    <td>0.6361</td>
+                                    <td>0.1841</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-1.41</td>
+                                    <td>-0.0325</td>
+                                    <td>+0.0621</td>
+                                </tr>
+        
+                                <!-- Static Prior -->
+                                <tr>
+                                    <td><b>w/ Static Prior</b></td>
+                                    <td>13.35</td>
+                                    <td>0.6550</td>
+                                    <td>0.2996</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>w/o Static Prior</b></td>
+                                    <td>12.56</td>
+                                    <td>0.5779</td>
+                                    <td>0.3461</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><b>∆</b></td>
+                                    <td>-0.79</td>
+                                    <td>-0.0771</td>
+                                    <td>+0.0465</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <p class="subtitle has-text-justified" style="margin-top: 10px;">
+                        Dynamic priors improve fidelity and perceptual quality compared to removing priors,
+                        while static priors provide smaller but consistent gains over their ablated versions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--<div class="container is-max-desktop">
             <div class="hero-body">
                 <h2 class="title is-3 has-text-centered">Ablation Study</h2>
                 <div class="content has-text-centered is-size-7">
@@ -731,7 +867,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- ablation 1
         <div class="video-container">
