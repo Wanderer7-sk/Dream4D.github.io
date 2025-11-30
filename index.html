@@ -940,15 +940,11 @@
                 <h2 class="title is-3 has-text-centered">Ablation Study on 4D Generator's Impact for Dynamic and Static Scene Modeling</h2>
                 <img src="static/image/ablation.png" width="100%">
                 <h2 class="subtitle has-text-justified">
-                    This 2×2 grid figure presents an ablation study comparing the isolated and combined performance of dynamic/static modules 
-                    with the 4D Generator. 
-                    The top row shows baseline outputs (left: dynamic module with temporal flickering artifacts highlighted by red boxes; 
-                    right: static module exhibiting multi-view inconsistencies), 
-                    while the bottom row demonstrates significantly improved results when integrated with the 4D Generator - 
-                    the left dynamic+4D case shows smoothed temporal transitions (arrows indicating coherent motion), 
-                    and the right static+4D case displays geometrically consistent multi-view renders. 
-                    Red bounding boxes strategically emphasize key quality improvements in texture details (static) and motion continuity (dynamic), 
-                    visually validating the 4D Generator's dual enhancement capability for both spatial and temporal reconstruction tasks.
+                    This 2×2 grid figure presents an ablation study comparing the isolated and combined performance of the Temporal and Pose modules with the 4D Generator. 
+                    The top row shows baseline outputs (left: the Temporal module with temporal flickering artifacts highlighted by red boxes; 
+                    right: the Pose module exhibiting multi-view inconsistencies), while the bottom row demonstrates significantly improved results when integrated with the 4D Generator. 
+                    The left Temporal+4D case shows smoothed temporal transitions (arrows indicating coherent motion), and the right Pose+4D case displays geometrically consistent multi-view renders.
+                    Red bounding boxes strategically emphasize key quality improvements in texture details (Pose) and motion continuity (Temporal), visually validating the 4D Generator’s dual enhancement capability for both spatial and temporal reconstruction tasks.
                 </h2>
             </div>
         </div>
